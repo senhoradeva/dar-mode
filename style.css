@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+
+:root{
+    --label-icon: url("./moon.png");
+    --developer-img: url("https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+
+.dark-mode {
+    --bg-color: #000;
+    --font-color: #fff;
+    --label-icon: url("./sun.png");
+    --developer-img: url("https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--font-color);
+    font-family: 'Varela Round', sans-serif;
+    font-size: 39px;
+    user-select: none;
+    transition: 2s;
+}
+
+.container{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mody-theme {
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    background-image: var(--label-icon);
+    background-repeat: no-repeat;
+    padding: 67px;
+    cursor: pointer;
+}
+
+.btn{
+    display: none;
+}
+
+.developer{
+   background-image: var(--developer-img); 
+   background-size: cover;
+   width: 500px;
+   height: 350px;
+   margin-bottom: 30px;
+   position: relative;
+   top: 10%;
+   right: 8%;
+   object-fit: cover;
+}
